@@ -1,0 +1,362 @@
+@mixin media-h-1680 {
+  @media screen and (max-height: 1680px) {
+    @content;
+  }
+}
+
+@mixin media-h-1536 {
+  @media screen and (max-height: 1536px) {
+    @content;
+  }
+}
+
+@mixin media-w-1024-h-1280 {
+  @media screen and (max-height: 1280px) and (max-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin media-w-900-h-1440 {
+  @media screen and (max-height: 1440px) and (max-width: 900px) {
+    @content;
+  }
+}
+
+@mixin media-h-1366 {
+  @media screen and (max-height: 1366px) {
+    @content;
+  }
+}
+
+@mixin media-h-1024 {
+  @media screen and (max-height: 1024px) {
+    @content;
+  }
+}
+
+@mixin media-w-1024 {
+  @media screen and (max-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin media-w-780 {
+  @media screen and (max-width: 780px) {
+    @content;
+  }
+}
+
+@mixin media-w-720-768 {
+  @media screen and (min-width: 720px) and (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin media-w-700 {
+  @media screen and (max-width: 700px) {
+    @content;
+  }
+}
+
+@mixin media-w-810 {
+  @media screen and (max-width: 810px) {
+    @content;
+  }
+}
+
+@mixin media-w-900 {
+  @media screen and (max-width: 900px) {
+    @content;
+  }
+}
+
+@mixin font-size($size: 100, $wight: 700, $color: var(--color-dark)) {
+  font-family: var(--font-primary);
+  font-style: normal;
+  font-size: 80px;
+  line-height: 80px;
+  color: $color;
+  font-weight: $wight;
+
+  @if $size == 100 {
+    font-size: 100px;
+    line-height: 100px;
+
+    @include media-w-1024 {
+      font-size: 80px;
+      line-height: 80px;
+    }
+
+    @include media-w-810 {
+      font-size: 60px;
+      line-height: 60px;
+    }
+
+    @include media-w-780 {
+      font-size: 40px;
+      line-height: 40px;
+    }
+  }
+
+  @if $size == 80 {
+    font-size: 80px;
+    line-height: 80px;
+
+    @include media-w-1024 {
+      font-size: 70px;
+      line-height: 70px;
+    }
+
+    @include media-w-810 {
+      font-size: 60px;
+      line-height: 60px;
+    }
+
+    @include media-w-780 {
+      font-size: 50px;
+      line-height: 50px;
+    }
+  }
+
+  @if $size == 60 {
+    font-size: 60px;
+    line-height: 60px;
+
+    @include media-w-1024 {
+      font-size: 50px;
+      line-height: 50px;
+    }
+
+    @include media-w-810 {
+      font-size: 40px;
+      line-height: 40px;
+    }
+
+    @include media-w-780 {
+      font-size: 30px;
+      line-height: 30px;
+    }
+  }
+
+  @if $size == 50 {
+    font-size: 50px;
+    line-height: 50px;
+
+    @include media-w-1024 {
+      font-size: 40px;
+      line-height: 40px;
+    }
+
+    @include media-w-810 {
+      font-size: 30px;
+      line-height: 30px;
+    }
+
+    @include media-w-780 {
+      font-size: 20px;
+      line-height: 20px;
+    }
+  }
+
+  @if $size == 48 {
+    font-size: 48px;
+    line-height: 48px;
+
+    @include media-w-1024 {
+      font-size: 44px;
+      line-height: 44px;
+    }
+
+    @include media-w-810 {
+      font-size: 40px;
+      line-height: 40px;
+    }
+
+    @include media-w-780 {
+      font-size: 36px;
+      line-height: 36px;
+    }
+  }
+
+  @if $size == 46 {
+    font-size: 46px;
+    line-height: 46px;
+
+    @include media-w-1024 {
+      font-size: 36px;
+      line-height: 36px;
+    }
+
+    @include media-w-810 {
+      font-size: 28px;
+      line-height: 28px;
+    }
+
+    @include media-w-780 {
+      font-size: 24px;
+      line-height: 24px;
+    }
+  }
+
+  @if $size == 40 {
+    font-size: 40px;
+    line-height: 40px;
+
+    @include media-w-1024 {
+      font-size: 30px;
+      line-height: 30px;
+    }
+
+    @include media-w-810 {
+      font-size: 25px;
+      line-height: 25px;
+    }
+
+    @include media-w-780 {
+      font-size: 20px;
+      line-height: 20px;
+    }
+  }
+
+  @if $size == 36 {
+    font-size: 36px;
+    line-height: 36px;
+
+    @include media-w-1024 {
+      font-size: 32px;
+      line-height: 32px;
+    }
+
+    @include media-w-810 {
+      font-size: 28px;
+      line-height: 28px;
+    }
+
+    @include media-w-780 {
+      font-size: 18px;
+      line-height: 18px;
+    }
+  }
+
+  @if $size == 30 {
+    font-size: 30px;
+    line-height: 30px;
+
+    @include media-w-1024 {
+      font-size: 25px;
+      line-height: 25px;
+    }
+
+    @include media-w-810 {
+      font-size: 20px;
+      line-height: 20px;
+    }
+
+    @include media-w-780 {
+      font-size: 15px;
+      line-height: 15px;
+    }
+  }
+
+  @if $size == 24 {
+    font-size: 24px;
+    line-height: 24px;
+
+    @include media-w-1024 {
+      font-size: 20px;
+      line-height: 20px;
+    }
+
+    @include media-w-810 {
+      font-size: 16px;
+      line-height: 16px;
+    }
+
+    @include media-w-780 {
+      font-size: 14px;
+      line-height: 14px;
+    }
+  }
+}
+
+@mixin select-input($height: 116px) {
+  height: $height;
+
+  @include media-w-900 {
+    height: calc($height - 26px);
+  }
+
+  @include media-w-810 {
+    height: calc($height - 36px);
+  }
+
+  @include media-w-700 {
+    height: calc($height - 56px);
+  }
+}
+
+@mixin select-input-padding {
+  padding-right: 30px;
+  padding-left: 30px;
+
+  @include media-w-900 {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+
+  @include media-w-810 {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}
+
+@mixin wrapper-padding {
+  padding-right: 40px;
+  padding-left: 40px;
+
+  @include media-w-1024 {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+
+  @include media-w-700 {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+}
+
+@mixin form-gap($gap: 40px) {
+  gap: $gap;
+
+  @include media-w-900 {
+    gap: calc($gap - 5px);
+  }
+
+  @include media-w-780 {
+    gap: calc($gap - 10px);
+  }
+
+  @include media-w-700 {
+    gap: calc($gap - 20px);
+  }
+}
+
+@mixin main-border-radius {
+  border-radius: 20px !important;
+
+  @include media-w-810 {
+    border-radius: 16px !important;
+  }
+
+  @include media-w-700 {
+    border-radius: 12px !important;
+    border-width: 1px !important;
+  }
+}
+
+@mixin media-label-input {
+  @include media-w-720-768 {
+    font-size: 23px;
+    line-height: 23px;
+  }
+}
